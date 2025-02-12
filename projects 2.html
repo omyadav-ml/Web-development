@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - MyGov</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004aad;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #004aad;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003080;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .divider-line {
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .divider-circle {
+            margin: 0 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .Forgotten-Password {
+            text-align: right;
+            margin-top: -10px;
+        }
+
+        .Forgotten-Password a {
+            color: #004aad;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .Forgotten-Password a:hover {
+            text-decoration: underline;
+        }
+
+        .social-login a {
+            display: inline-flex;
+            align-items: center;
+            margin: 10px 5px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .social-login img {
+            margin-right: 8px;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+        }
+
+        footer small {
+            display: block;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+
+            input[type="text"], input[type="password"] {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Log in to your MyGov account</h1>
+    </header>
+    <main>
+        <!-- OTP Login Section -->
+        <section>
+            <div>
+                <label for="otp-email">E-Mail/Mobile</label>
+                <input type="text" id="otp-email" placeholder="E-Mail/Mobile (Log in with OTP)" required>
+            </div>
+            <div>
+                <button type="button">Log in with OTP</button>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-circle">or</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Password Login Section -->
+        <section>
+            <div>
+                <label for="password-email">E-Mail/Mobile</label>
+                <input type="text" id="password-email" placeholder="E-Mail/Mobile (Log in with Password)" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="Forgotten-Password">
+                <a href="/Forget-Password">Forgotten password?</a>
+            </div>
+            <div>
+                <button type="button">Log in with Password</button>
+            </div>
+        </section>
+
+        <!-- Social Login Section -->
+        <section class="social-login">
+            <p><small>Login with Parichay/MeriPehchaan/Social Profile</small></p>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com" class="social-button facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook logo" width="30">
+                    <div>Facebook</div>
+                </a>
+                <a href="https://www.google.com" class="social-button google">
+                    <img src="https://53.fs1.hubspotusercontent-na1.net/hubfs/53/image8-2.jpg" alt="Google logo" width="60">
+                    <span>Google</span>
+                </a>
+                <a href="https://www.twitter.com" class="social-button twitter">
+                    <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg" alt="Twitter logo" width="30">
+                    <span>Twitter</span>
+                </a>
+                <a href="https://www.linkedin.com" class="social-button linkedin">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn logo" width="30">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
+        
+
+        <!-- Registration Prompt -->
+        <p><small>Not registered with <b>MyGov</b> account? <a href="/Register-Now">Register Now</a></small></p>
+        <a href="projects 3.html" target="_blank">
+            Project 3
+        </a>
+    </main>
+
+    <hr>
+    <footer>
+        <p>
+            <small>
+                © Content owned, updated, and maintained by the MyGov Cell. 
+                This website belongs to MyGov, Ministry of Electronics & Information Technology, 
+                Government of India. Platform is designed, developed, and hosted by National 
+                Informatics Centre. auth-162 - Last Updated: 25/01/25
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
