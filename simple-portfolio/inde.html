@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background: url('game-background.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .feature {
+            background-color: #222;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+        }
+        .feature h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Title</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Download</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to Game Title</h1>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h2>Feature 1</h2>
+                <p>Exciting gameplay with stunning graphics.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 2</h2>
+                <p>Multiplayer mode to play with friends.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 3</h2>
+                <p>Regular updates with new content.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Game Title. All rights reserved.</p>
+    </footer>
+</body>
+</html>
