@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/ml_project/__init__.py
+src/ml_project/data.py
+src/ml_project/evaluate.py
+src/ml_project/features.py
+src/ml_project/model.py
+src/ml_project/train.py
+src/ml_project.egg-info/PKG-INFO
+src/ml_project.egg-info/SOURCES.txt
+src/ml_project.egg-info/dependency_links.txt
+src/ml_project.egg-info/requires.txt
+src/ml_project.egg-info/top_level.txt
+tests/test_pipeline.py
